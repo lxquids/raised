@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+	<title>raised - links</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220217213008">
+	<link rel="stylesheet" href="/fonts/icons.ttf?_v=20220217213008">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap&_v=20220217213008" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css?_v=20220217213008">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css?_v=20220217213008" rel="stylesheet">
+
+	<link rel="icon" href="img/header/icon.png">
+	<meta name="description" content="Platforma cu o bibliotecă larga de resurse, materiale grafice, șabloane PowerPoint, website-uri și nu numai.">
+	<meta name="keywords" content="powerpoint template, raised, raised.one, raised moldova, raised romania, raised powerpoint, raised ilustratii, raised manuale, manuale scolare, manuale, sabloane, raised sait, raised site">
+	<meta name="author" content="F12">
+
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="preconnect" href="//fonts.gstatic.com">
+	<link rel="preconnect" href="//cdnjs.cloudflare.com">
+
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="raised - all-in-one">
+	<meta property="og:description" content="O bibliotecă largă de resurse, materiale grafice, șabloane PowerPoint, website-uri, etc.">
+	<meta property="og:image" content="img/banner.jpg">
+	<meta property="og:site_name" content="raised">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="raised">
+	<meta name="twitter:title" content="raised - all-in-one">
+	<meta name="twitter:description" content="O bibliotecă largă de resurse, materiale grafice, șabloane PowerPoint, website-uri, etc.">
+	<meta name="twitter:image" content="img/banner.jpg">
+</head>
+
+<body>
+	<div class="preloader">
+		<a href=""><img src="img/loading.svg?_v=1645126208647" alt=""></a>
+	</div>
+	<div class="wrapper">
+		<main class="page">
+			<div class="links __container">
+				<div class="links__body">
+					<a href="index.html" class="links__logo"><img src="img/raised.svg?_v=1645126208647" alt="logo"></a>
+					<div class="link-buttons">
+						<a class="link-button" href="index.html">
+							<i class="ri-link"></i>
+							<div class="link-button__name">
+								<h2 class="link-button__title">Website</h2>
+								<p class="link-button__subtitle">raised.one</p>
+							</div>
+						</a>
+						<a class="link-button" href="https://www.instagram.com/raised.one/">
+							<i class="ri-instagram-line"></i>
+							<div class="link-button__name">
+								<h2 class="link-button__title">Instagram</h2>
+								<p class="link-button__subtitle">@raised.one</p>
+							</div>
+						</a>
+						<a class="link-button" href="https://t.me/raisedbyus">
+							<i class="ri-telegram-line"></i>
+							<div class="link-button__name">
+								<h2 class="link-button__title">Telegram</h2>
+								<p class="link-button__subtitle">t.me/raisedbyus</p>
+							</div>
+						</a>
+						<h2 class="link__email">info@raised.one</h2>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<!-- <div class="hystmodal" id="myPopup" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Закрыть</button>
+		</div>
+	</div>
+</div>
+<div class="hystmodal" id="massageName" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Закрыть</button>
+			Сообщение
+		</div>
+	</div>
+</div>
+ -->
+	<script src="./js/app.min.js?_v=20220217213008"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css?_v=20220217213008" />
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+	<script>
+		var preloader = document.querySelector(".preloader")
+
+		window.addEventListener("load", vanish);
+
+		function vanish() {
+			preloader.classList.add("disppear");
+		}
+	</script>
+
+	<style>
+		.card-slider .swiper-button-next::after {
+			color: black;
+			display: none;
+		}
+
+		.card-slider .swiper-button-prev::after {
+			color: black;
+			display: none;
+		}
+
+		.card-slider .swiper-pagination {
+			position: relative;
+			margin-top: 16px;
+		}
+
+		.card-slider .swiper-pagination-bullet {
+			background-color: #323232;
+		}
+	</style>
+
+	<script>
+		var swiper = new Swiper(".card-slider", {
+			slidesPerView: 4.3,
+			spaceBetween: 25,
+
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+
+			loop: true,
+			autoplay: {
+				delay: 3000,
+			},
+
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			breakpoints: {
+				1212: {
+					slidesPerView: 4.3,
+				},
+
+				992: {
+					slidesPerView: 3.3,
+				},
+
+				768: {
+					slidesPerView: 3.3,
+				},
+
+				650: {
+					slidesPerView: 3.3,
+				},
+
+				481: {
+					slidesPerView: 2.5,
+				},
+
+				360: {
+					spaceBetween: 10,
+					slidesPerView: 2.5,
+				},
+
+				320: {
+					spaceBetween: 10,
+					slidesPerView: 1.5,
+				},
+				250: {
+					spaceBetween: 10,
+					slidesPerView: 1.2,
+				},
+
+			},
+		});
+	</script>
+
+	<script>
+		var containerEl = document.querySelector('.mixitup');
+
+		var mixer = mixitup(containerEl, {
+			selectors: {
+				target: '.web'
+			},
+			animation: {
+				duration: 1000,
+				effects: ""
+			}
+		});
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
